@@ -1,0 +1,155 @@
+/* 
+   Tamana Seddiqi
+   991528861
+*/
+.box
+   {
+	background-image: url("http://hdwpro.com/wp-content/uploads/2016/03/Animated-3D-Background.jpeg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	color : white;
+	text-align:center;
+	font-family:arial;
+	margin: 0px;
+}
+	
+.box
+{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 50px;
+	grid-template-areas:
+		"header header"
+		"lmovie-data rmovie-data"
+		"lactor-data ractor-data"
+		"footer footer";
+}
+	
+.header
+{   
+    grid-area: header;
+	background-color: #ffaacc;
+	border: 3px solid red;
+	border-radius: 80px;
+	margin: 20px;
+	opacity: 0.8;
+	padding: 3px;
+	font-width:bold;	
+}
+	
+.lmovie-data
+{
+	grid-area : lmovie-data;
+	border : 2px solid white;
+}
+
+.rmovie-data
+{
+	grid-area : rmovie-data; 
+	border : 2px solid white;
+}
+	
+.lactor-data
+{
+	grid-area:lactor-data;
+	display:flex;
+	flex-wrap:wrap;
+	border : 2px solid white;
+}
+	
+.ractor-data
+{
+	grid-area:ractor-data;
+	display:flex;
+	flex-wrap:wrap;
+	padding-left: 20px;
+	border : 2px solid white;
+}
+
+.footer
+{
+	grid-area:footer;
+	background-color: #ffaacc;
+	border: 3px solid red;
+	border-radius: 80px;
+	margin: 20px;
+	opacity: 0.8;
+	padding: 10px;
+	font-width:bold;
+}
+
+.footer
+{
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	justify-content: space-evenly;	
+	grid-template-areas:
+	"footer1 footer1"
+	"theater1 theater2";
+}
+
+.movie-data
+{
+	color: #ffaaaa;
+	text-decoration:underline;
+}
+	
+a
+{
+	color : white;
+	text-decoration : none;
+}
+	
+img
+{
+	width : 50%;
+	height : 50%;
+}
+	
+#one{width: 300px; height: 300px;}
+	
+#two
+{
+	color : pink;
+	text-decoration: underline;
+}
+	
+.footer1{grid-area: footer1;}
+
+.theater1
+{ 
+	grid-area:theater1;
+	font-size : 25px;
+}
+
+.theater2
+{ 
+	grid-area:theater2; 
+	font-size : 25px;
+}
+
+#link{color: purple;}
+	
+.lphoto, .rphoto
+{
+	width:40%;
+	margin: 20px;
+}
+	
+#para
+{ 
+	text-align:left;
+	padding-left:10%;
+	color: magenta
+}
+
+#para1
+{
+	text-align:left;
+	padding-left:10%;
+	color: skyblue;
+}
+	
+h3{color:limegreen}
+	
+button{font-size:15px;}
